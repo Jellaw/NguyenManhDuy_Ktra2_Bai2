@@ -59,13 +59,6 @@ public class SQLiteController extends SQLiteOpenHelper {
     }
 
 
-    public int deleteLichthi(int id){
-        String whereClause="id=?";
-        String[] whereArgs={String.valueOf(id)};
-        SQLiteDatabase st = getWritableDatabase();
-        return st.delete("orders",whereClause,whereArgs);
-    }
-
     public ArrayList<Lichthi> getAllLichthi(){
         ArrayList<Lichthi> list = new ArrayList<>();
         SQLiteDatabase statement = getReadableDatabase();
