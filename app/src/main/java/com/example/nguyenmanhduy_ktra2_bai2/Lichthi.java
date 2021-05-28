@@ -7,7 +7,7 @@ public class Lichthi {
     String giothi;
     String kieuthi;
 
-    public Lichthi(int id, String ngaythi, String giothi, String tenmonhoc, String kieuthi) {
+    public Lichthi(int id, String tenmonhoc, String ngaythi, String giothi, String kieuthi) {
         this.id = id;
         this.tenmonhoc = tenmonhoc;
         this.ngaythi = ngaythi;
@@ -15,7 +15,7 @@ public class Lichthi {
         this.kieuthi = kieuthi;
     }
 
-    public Lichthi(String ngaythi, String giothi, String tenmonhoc, String kieuthi) {
+    public Lichthi(String tenmonhoc, String ngaythi, String giothi, String kieuthi) {
         this.tenmonhoc = tenmonhoc;
         this.ngaythi = ngaythi;
         this.giothi = giothi;

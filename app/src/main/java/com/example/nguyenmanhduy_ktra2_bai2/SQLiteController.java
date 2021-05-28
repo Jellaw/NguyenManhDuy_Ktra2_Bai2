@@ -53,8 +53,8 @@ public class SQLiteController extends SQLiteOpenHelper {
         values.put("ngaythi", lichthi.getNgaythi());
         values.put("giothi", lichthi.getGiothi());
         values.put("kieuthi", lichthi.getKieuthi());
-        String whereClause = "id= ?";
-        String[] whereArgs = {String.valueOf(lichthi.getId())};
+        String whereClause = "tenmonhoc= ?";
+        String[] whereArgs = {String.valueOf(lichthi.getTenmonhoc())};
         return database.update("lichthi", values, whereClause, whereArgs);
     }
 

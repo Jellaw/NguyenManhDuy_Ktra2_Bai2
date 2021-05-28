@@ -34,9 +34,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             return;
         } else {
             holder.tvID.setText("ID: " + lichthi.getId());
-            holder.tvName.setText("ngay thi: " + lichthi.getTenmonhoc());
-            holder.tvNgaythi.setText("gio Thi: " + lichthi.getNgaythi());
-            holder.tvGiothi.setText("Ten mon Thi: " + lichthi.getGiothi());
+            holder.tvName.setText("Ten mon hoc: " + lichthi.getTenmonhoc());
+            holder.tvNgaythi.setText("Ngay Thi: " + lichthi.getNgaythi());
+            holder.tvGiothi.setText("Gio Thi: " + lichthi.getGiothi());
             holder.tvKieuthi.setText("Kieu Thi: " + lichthi.getKieuthi());
             if (list.get(position).getKieuthi().equals("Thi viet")){
                 dem++;
